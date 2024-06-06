@@ -47,7 +47,7 @@ main{
     width: 70%;
 }
 .content{
-    margin: 40px;
+    margin: 15px;
    
 }
 
@@ -68,8 +68,14 @@ main{
 .bg-blue{
     background-color: #0084FD;
 }
+.bg-white{
+    background-color: #fff;
+}
 .blue-txt{
     color: #0084FD;
+}
+.black-txt a{
+    color: black;
 }
 .grey-txt{
     color: #5A6D7E;
@@ -77,6 +83,14 @@ main{
 .white-txt{
     color: #fff;
     text-decoration: none;
+}
+
+.btn{
+    border-radius: 15px;
+    text-align: center;
+}
+.btn a{
+    padding: 15px 10px;
 }
 
 .card{
@@ -95,6 +109,12 @@ main{
 }
 .mb-30{
     margin-bottom: 30px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.mt-50{
+    margin-top: 50px;
 }
 
     /* padding */
@@ -117,6 +137,13 @@ main{
     font-weight: 700;
     letter-spacing: .2rem;
 }
+.txt-center{
+    text-align: center;
+}
+
+.align-center{
+    margin: auto;
+}
 /* SITE SECTIONS */
 /* header */
 .unstyle-list{
@@ -124,19 +151,28 @@ main{
     display: flex;
 }
 .unstyle-list li{
-    margin: 0 10px;
+    margin: 0 20px;
 }
 .unstyle-list li a{
-    color: #fff;
     text-decoration: none;
 }
 .mobile-menu{
     padding: 11px 0;
 }
+
 /* chiedi metodo alternativo per allineare verticalmente al posto di usare padding !!!!!!!!!!!!!!!!!!!!!!! */
 .desktop-menu{
     display: none;
     padding: 11px 0;
+}
+.icon-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-card i{
+    font-size: 75px;
+    color: #0084FD;
 }
 
 /* FIRTS SECTION */

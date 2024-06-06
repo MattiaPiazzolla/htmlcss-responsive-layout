@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    font-size: 20px;
+    font-size: 15px;
+    font-family: "Cairo", sans-serif;
 }
 
 /* SECTION CLASSES */
@@ -46,23 +47,76 @@ main{
     width: 70%;
 }
 .content{
-    margin: 20px;
-    height: 300px;
-    background-color: red;
-    border: 1px solid black;
+    margin: 40px;
+   
 }
 
 /* UTILITY CLASSES */
 .float-end{
     float: right;
 }
+.d-inline-block{
+    display: inline-block;
+}
+    /* color */
 .bg-purple{
     background-color: #9593E6;
 }
+.bg-lightblue{
+    background-color: #B5DDFF;
+}
+.bg-blue{
+    background-color: #0084FD;
+}
+.blue-txt{
+    color: #0084FD;
+}
+.grey-txt{
+    color: #5A6D7E;
+}
+.white-txt{
+    color: #fff;
+    text-decoration: none;
+}
 
+.card{
+    padding: 50px 50px 0 50px;
+    border-radius: 15px;
+}
+.btn-first{
+    border-radius: 30px;
+    padding: 10px 0;
+    width: 85%;
+    text-align: center;
+}
+    /* margin */
+.mt-30{
+    margin-top: 30px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
 
+    /* padding */
+.pt-30{
+    padding-top: 30px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.pt-5{
+    padding-top: 5px;
+}
 
-
+    /* font */
+.font-txt{
+    font-size: 30px;
+}
+.txt-btn{
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+}
 /* SITE SECTIONS */
 /* header */
 .unstyle-list{
@@ -85,11 +139,18 @@ main{
     padding: 11px 0;
 }
 
+/* FIRTS SECTION */
+.card img{
+    width: 100%;
+    margin-bottom: -7.5px;
+}
+
 
 /* MEDIA QUERY */
 
 /* TABLET */
 @media screen and (min-width: 576px) {
+    /* layout */
     .col-md-66{
         width: calc(100% / 3 * 2);
     }
@@ -105,6 +166,11 @@ main{
     .col-md-40{
         width: 40%;
     }
+    /* first section */
+    .card img{
+        width: 60%;
+    }
+    
 }
 
 /* DESKTOP */
@@ -123,13 +189,39 @@ main{
         width: 60%;
         margin: 0 auto;
     }
-    
+    /* first section */
+    .card img{
+        width: 100%;
+        
+    }
+
 }
 @media screen and (min-width: 1102px) {
+    .col-xlg-50{
+        width: 50%;
+    }
     .desktop-menu{
         display: block;
     }
     .mobile-menu{
         display: none;
+    }
+    .card{
+        min-height: 350px;
+    }
+    .card img{
+        margin-bottom: 0;    
+    }
+    .flex-bottom{
+        display: flex;
+        align-items: end;
+    }
+    .btn-first{
+        width: 100%;
+    }
+}
+@media screen and (min-width:1329px) {
+    .btn-first{
+        width: 75%;
     }
 }

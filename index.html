@@ -6,6 +6,9 @@
     <title>Responsive Layout</title>
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <!-- Main Styles -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,13 +18,13 @@
         <div class="container">
             <div class="row">
                 <div class="header-col-left">
-                    <div class="content-header">
+                    <div class="content-header pt-5 ">
                         <img src="./img/logo.png" alt="logo">
                     </div>
                 </div>
                 <div class="header-col-right">
                     <div class="content-header">
-                        <div class="mobile-menu v-middle float-end">
+                        <div class="mobile-menu float-end">
                             <i class="fa-solid fa-bars fa-xl"></i>
                         </div>
                         <div class="desktop-menu float-end">
@@ -55,7 +58,18 @@
             <div class="row">
                 <div class="col-100 col-md-66">
                     <div class="content">
-                        <div class="card bg-lightblue"></div>
+                        <div class="card bg-lightblue flex-lg">
+                            <div class="row">
+                                <div class="col-100 col-xlg-50">
+                                    <h2 class="blue-txt font-txt">Get a demo application</h2>
+                                    <p class="pt-30 pb-30 grey-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat aliquid incidunt perspiciatis natus fuga error aperiam ipsam reprehenderit quod.</p>
+                                    <a href="" class="mt-30 mb-30 d-inline-block btn-first white-txt bg-blue txt-btn">&#63743; App Store</a>
+                                </div>
+                                <div class="col-100 col-xlg-50 flex-bottom">
+                                    <img src="./img/phone.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-100 col-md-33">
@@ -80,15 +94,17 @@
                 </div>
             </div>
         </div>
-        <!-- SECOND SECTION -->
-        <div class="bg-purple">
-            <div class="container-sm">
-                <div class="row">
-                    <div class="col-100 col-lg-50">
-                        <div class="content"></div>
-                    </div>
-                    <div class="col-100 col-lg-50">
-                        <div class="content"></div>
+        <!-- PLANNING SECTION -->
+        <div id="planning">
+            <div class="bg-purple">
+                <div class="container-sm">
+                    <div class="row">
+                        <div class="col-100 col-lg-50">
+                            <div class="content"></div>
+                        </div>
+                        <div class="col-100 col-lg-50">
+                            <div class="content"></div>
+                        </div>
                     </div>
                 </div>
             </div>

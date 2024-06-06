@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SECTION CLASSES */
+header{
+    background-color: #0084FD;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* LAYOUTS CLASS */
+.container{
+    max-width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-100{
+    width: 100%;
+}
+.col-50{
+    width: 50%;
+}
+
+/* UTILITY CLASSES */
+.float-end{
+    float: right;
+}

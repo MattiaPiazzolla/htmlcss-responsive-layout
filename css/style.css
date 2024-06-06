@@ -53,6 +53,8 @@ main{
 }
 
 /* MEDIA QUERY */
+
+/* TABLET */
 @media screen and (min-width: 576px) {
     .col-md-66{
         width: calc(100% / 3 * 2);
@@ -62,5 +64,29 @@ main{
     }
     .col-md-50{
         width: 50%;
+    }
+    .col-md-60{
+        width: 60%;
+    }
+    .col-md-40{
+        width: 40%;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+    .col-lg-50{
+        width: 50%;
+    }
+    .col-lg-33{
+        width: calc(100% / 3);
+    }
+    .container{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .container-sm{
+        width: 60%;
+        margin: 0 auto;
     }
 }

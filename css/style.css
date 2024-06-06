@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-size: 20px;
+}
 
 /* SECTION CLASSES */
 header{
@@ -15,8 +18,10 @@ header{
     width: 100%;
     z-index: 1000;
 }
-.content-footer{
-    padding: 10px;
+.content-header{
+    padding: 0 35px;
+    max-height: 47px;
+    position: relative;
 }
 main{
     padding-top: 95px;
@@ -34,8 +39,11 @@ main{
 .col-100{
     width: 100%;
 }
-.header-col{
-    width: 50%;
+.header-col-left{
+    width: 30%;
+}
+.header-col-right{
+    width: 70%;
 }
 .content{
     margin: 20px;
@@ -51,6 +59,32 @@ main{
 .bg-purple{
     background-color: #9593E6;
 }
+
+
+
+
+/* SITE SECTIONS */
+/* header */
+.unstyle-list{
+    list-style: none;
+    display: flex;
+}
+.unstyle-list li{
+    margin: 0 10px;
+}
+.unstyle-list li a{
+    color: #fff;
+    text-decoration: none;
+}
+.mobile-menu{
+    padding: 11px 0;
+}
+/* chiedi metodo alternativo per allineare verticalmente al posto di usare padding !!!!!!!!!!!!!!!!!!!!!!! */
+.desktop-menu{
+    display: none;
+    padding: 11px 0;
+}
+
 
 /* MEDIA QUERY */
 
@@ -88,5 +122,14 @@ main{
     .container-sm{
         width: 60%;
         margin: 0 auto;
+    }
+    
+}
+@media screen and (min-width: 1102px) {
+    .desktop-menu{
+        display: block;
+    }
+    .mobile-menu{
+        display: none;
     }
 }

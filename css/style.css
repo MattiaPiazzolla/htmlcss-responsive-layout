@@ -27,6 +27,9 @@ header{
 main{
     padding-top: 95px;
 }
+footer{
+    background-color: #333333;
+}
 
 /* LAYOUTS CLASS */
 .container{
@@ -72,8 +75,14 @@ main{
 .bg-white{
     background-color: #fff;
 }
+.lilla-txt{
+    color: #9893E5;
+}
 .blue-txt{
     color: #0084FD;
+}
+.yellow-txt{
+    color: #FCC261;
 }
 .black-txt a{
     color: black;
@@ -98,6 +107,12 @@ main{
     padding: 3px;
 }
 .btn-numbers{
+    border-radius: 15px;
+    text-align: center;
+    padding: 2px 45px;
+    width: 30%;
+}
+.btn-linkedin{
     border-radius: 15px;
     text-align: center;
     padding: 2px 18px;
@@ -167,8 +182,19 @@ main{
 .font-txt{
     font-size: 25px;
 }
+.txt-big{
+    font-size: 50px;
+}
 .font-txt-lg{
     font-size: 30px;
+}
+.btn-cta{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    font-size: 20px;
+    width: 60%;
+    border-radius: 50px;
 }
 .txt-btn{
     font-size: 1.25rem;
@@ -177,6 +203,9 @@ main{
 }
 .txt-center{
     text-align: center;
+}
+.underline{
+    text-decoration: underline;
 }
 
 .align-center{
@@ -199,6 +228,9 @@ main{
     margin: 0 20px;
 }
 .unstyle-list li a{
+    text-decoration: none;
+}
+.decoration-none{
     text-decoration: none;
 }
 .mobile-menu{
@@ -251,11 +283,17 @@ main{
     text-align: center;
     padding: 20px 10px;
 }
+.card-sm h3{
+    text-align: center;
+}
 .card-sm img{
     width: 100%;
 }
 .italic{
     font-style: italic;
+}
+.thin-font{
+    font-weight: 200;
 }
 .circle{
     border-radius: 50px;
@@ -286,6 +324,9 @@ main{
     background-size: cover;
     font-size: 30px;
 }
+.justify-center{
+    justify-content: center;
+}
 
 /* MEDIA QUERY */
 
@@ -314,7 +355,50 @@ main{
     .card-top{
         min-height: 713px;
     }
+    .v-align-flex{
+        align-items: center;
+    }
+    .flex{
+        display: flex;
+    }
+    .block{
+        display: block;
+    }
+    .width-70{
+        width: 70%;
+    }
+    .round{
+        margin: auto 0;
+        width: 150px;
+        height: 150px;
+    }
+    .card-sm{
+        padding: 10px;
+        border-radius: 30px;
+    }
+    .card-sm p , .card-sm h3{
+        text-align: left;
+        padding-left: 20px;
+    }
+    .card-sm p{
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+    .btn-cta{
+        width: 35%;
+    }
+    .w-50{
+        width: 50%;
+    }
     
+    .mb-footer{
+        margin-bottom: 30px;
+    }
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* DESKTOP */

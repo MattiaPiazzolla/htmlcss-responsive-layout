@@ -327,6 +327,9 @@ footer{
 .justify-center{
     justify-content: center;
 }
+.plannig-p{
+    text-align: center !important;
+}
 
 /* MEDIA QUERY */
 
@@ -410,12 +413,25 @@ footer{
         width: calc(100% / 3);
     }
     .container-sm{
-        width: 60%;
+        width: 60% !important;
         margin: 0 auto;
     }
     /* first section */
     .card img{
         width: 100%;    
+    }
+    .img-planning{
+        width: 60% !important;
+    }
+    #planning .card-sm{
+        margin-left: 50px;
+        justify-self: baseline;
+    }
+    .full-height {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 }
 @media screen and (min-width: 1102px) {
